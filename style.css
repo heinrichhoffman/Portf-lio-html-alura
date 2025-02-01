@@ -15,7 +15,18 @@ body {
     background-color: black;
     color: white;
 
+
+
+
+}    
+
+
+
+.cabecalho {
+    padding: 2% 0% 0% 
+
 }
+
 .titulo-destaque {
     color: #22D4FD;
 }
@@ -25,13 +36,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between ;
+    gap: 82px;
+
 
 
 }
 
 .apresentacao__conteudo {
 
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -40,12 +53,12 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: "Krona One", serif;
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: "Montserrat", serif;
 }
 
@@ -56,10 +69,10 @@ body {
 
 .apresentacao__links__link {
     background-color: #22D4FD;
-    width: 280px;
+    width: 50%;
     text-align: center;
     border-radius: 16px;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 21.5px 0;
     text-decoration: none;
     color: black;
@@ -70,6 +83,28 @@ body {
 
 .apresentacao__imagem {
     max-width: 400px;
-    width: 100%;
+    width: 50%;
     border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho{
+        padding: 10%;
+        
+
+
+    }
+
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+
 }
